@@ -30,9 +30,9 @@ func Run() {
 	}
 
 	for {
-		time.Sleep(duration)
-
 		common.LoggingClient.Debug("Auto-discovery triggered")
 		handler.DiscoveryHandler(nil)
+		
+		time.Sleep(duration)
 	}
 }
